@@ -21,7 +21,7 @@ import { Card, CardImg,CardText,CardBody,CardTitle } from 'reactstrap';
                        year:'numeric',
                        month:'short',
                        day:'2-digit'
-                   }).format(new Date(comment.date))}
+                   }).format(new Date(Date.parse(comment.date)))}
                    </p>
                 </li>
             )
